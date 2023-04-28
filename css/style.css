@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 /* Mau den */
-:root { 
+:root {
     --lightblue: #00CCFF;
     --red: #FF0000;
     --black: #fff;
@@ -17,6 +18,7 @@
     --border-color: #fff;
     --contact-text-color: #fff;
 }
+
 /* mau trang */
 body.active {
     --black: #444;
@@ -32,41 +34,6 @@ body.active {
     --footer-front-color: #000;
     --border-color: #000;
     --contact-text-color: #000;
-}
-
-.footer {
-    background-color: var(--footer-bg-color);
-    padding: 20px;
-    text-align: center;
-    border-top: 2px solid var(--border-color);
-    ;
-    color: var(--footer-front-color);
-}
-
-.footer ul {
-    list-style: none;
-    padding: 30px;
-}
-
-.footer li {
-    padding: 5px;
-}
-
-.footer li a:hover {
-    color: #fff;
-}
-
-.footer ul a {
-    color: var(--footer-front-color);
-    font-size: 14px;
-}
-
-.footer p {
-    font-size: 23px;
-}
-
-.footer p:hover {
-    color: #FF0000;
 }
 
 * {
@@ -99,6 +66,7 @@ section {
 }
 
 .btn {
+
     margin-top: 1rem;
     display: inline-block;
     padding: 1rem 3.5rem;
@@ -141,9 +109,20 @@ section {
     text-align: center;
 }
 
+.header .user i.verification-mark {
+    background-image: url("https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/9TbszPwJYOK.png");
+    background-position: -40px -132px;
+    background-size: 190px 186px;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    display: inline-block;
+  }
+  
+
 .header .user img {
     margin: 1rem 0;
-    border: 6px solid var(--border-user-color);
+    border: 4px solid var(--border-user-color);
     border-radius: 50%;
     height: 18rem;
     width: 18rem;
@@ -274,7 +253,12 @@ section {
     color: var(--black);
     line-height: 2;
     padding: 1rem 0;
+    text-align: justify;
+    text-justify: inter-word;
+    display: flex;
+    justify-content: center;
 }
+
 
 .services .box-container {
     display: grid;
@@ -307,6 +291,7 @@ section {
     font-size: 1.4rem;
     line-height: 1.8;
     color: var(--light-color);
+    /* display: block; */
 }
 
 .services .box-container .box::before {
@@ -328,6 +313,16 @@ section {
 
 .services .box-container .box:hover>* {
     color: #fff;
+}
+
+.services .box-container .box .btn-cpy{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+.services .box-container .box .btn-cpy:hover{
+    color: #000;
+    cursor: pointer;
 }
 
 .portfolio .box-container {
@@ -442,6 +437,7 @@ section {
 .contact tbody {
     color: var(--contact-text-color);
 }
+
 /*  */
 .credits {
     font-size: 2rem;
@@ -456,7 +452,41 @@ section {
     color: var(--lightblue);
 }
 
+#footer {
+    background-color: var(--footer-bg-color);
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid var(--border-color);
+    color: var(--footer-front-color);
+}
 
+#footer ul {
+    list-style: none;
+    padding: 30px;
+}
+
+#footer li {
+    padding: 5px;
+}
+
+#footer ul a {
+    color: var(--footer-front-color);
+    font-size: 14px;
+}
+
+#footer p {
+    font-size: 23px;
+}
+
+#footer li a:hover {
+    color: #fff;
+}
+
+#footer p:hover {
+    color: #FF0000;
+}
 
 
 
@@ -533,5 +563,15 @@ section {
 
     .header .navbar a {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #footer ul {
+        padding: 10px;
+    }
+
+    #footer p {
+        font-size: 18px;
     }
 }

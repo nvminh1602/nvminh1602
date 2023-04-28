@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile of Mynh</title>
+    <title>My Profile</title>
 
     <link rel="icon" type="image/x-icon" href="./image/img-favicon-title.jpg">
+    <link rel="stylesheet" href="./fontIcon/themify-icons/themify-icons.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -24,7 +25,10 @@
 
         <div class="user">
             <img src="image/user-img.jpg" alt="">
-            <h3>PAUL NGUYEN</h3>
+            <h3>
+                PAUL NGUYEN  
+                <i title="Verification Mark" data-visualcompletion="css-img" aria-label="Tài khoản đã xác minh" class="verification-mark" role="img"></i>
+            </h3>
             <P>( NGUYEN VAN MINH )</P>
         </div>
 
@@ -55,33 +59,30 @@
         <div class="content">
             <h3>WELCOME TO MY PROFILE</h3>
         </div>
-
     </section>
-
 
     <section class="about" id="about">
-
         <h1 class="heading">About</h1>
-
         <div class="row">
-
             <div class="content">
-                <p>- Full Name : NGUYEN VAN MINH<br>
-                    <br>
-                    - Date Of Birth : February 16, 2004<br>
-                    <br>
-                    - Relationship : Single<br>
-                    <br>
-                <p>- Accommodation : Go Vap, Ho Chi Minh City, Viet Nam<br>
-                    <br>
-                    - Education : Industrial University of Ho Chi Minh City (Software Engineering Technology)<br>
-                    <br>
-                    - Favorite : Music, Vintage Coffee, Horror Movies, Travel...
-                </p>
+                <div class="center">
+                    <p>- Full Name : NGUYEN VAN MINH<br>
+                        <br>
+                        - Date Of Birth : February 16, 2004<br>
+                        <br>
+                        - Relationship : Single<br>
+                        <br>
+                        - Accommodation : Go Vap, Ho Chi Minh City, Viet Nam<br>
+                        <br>
+                        - Education : Industrial University of Ho Chi Minh City (Software Engineering Technology)<br>
+                        <br>
+                        - Favorite : Music, Vintage Coffee, Horror Movies, Travel...
+                    </p>
+                </div>
             </div>
         </div>
-
     </section>
+
 
     <section class="myPictures" id="myPictures">
 
@@ -175,22 +176,8 @@
 
         <table class="table table-condensed" style="margin-bottom: 0px">
             <tbody>
-                <!-- email - CHUA DUNG DEN -->
-                <!-- <td style="width: 5%; padding-right: 0px!important;"><img src=""></td>
-                <td style="padding-left: 2px!important;width: 80%"><span style="font-size: 25px"><a>Email : NVMINH1602@GMAIL.COM</a><br>
-                </td>
-
-                <td>
-                    <a href="mailto:nvminh1602@gmail.com">
-                        <button class="btn btn-primary" id="batemail">Truy Cập</button>
-                    </a>
-                </td>
-                </tr> -->
-
                 <td style="width: 10%;padding-right: 0px!important;"><img src=""></td>
-                <td style="padding-left: 2px!important;width: 80%"><span style="font-size: 25px"><a>Email</a><br>
-
-                </td>
+                <td style="padding-left: 2px!important;width: 80%"><span style="font-size: 25px"><a>Email</a><br></td>
 
                 <td>
                     <a href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=new"><button class="btn btn-primary"
@@ -253,37 +240,38 @@
     <section class="services" id="services">
         <h1 class="heading">PAYMENT METHODS</h1>
         <div class="box-container">
-
             <div class="box">
                 <i class="fa-solid fa-building-columns"></i>
                 <h3>BANKING : Vietcombank</h3>
-                <p><b>Account number : 9353999798</b></p>
+                <p><b>
+                    Account number : 9353999798
+                    <i title="Copy" class="btn-cpy ti-files" data-account="9353999798"></i>
+                </b></p>
                 <p><b>Account holder : NGUYEN VAN MINH </b></p>
-                <!-- <img src="./image/img-vcb-qr.jpg" alt="Vietcombank QR Code" /> -->
             </div>
 
             <div class="box">
                 <i class="fa-solid fa-building-columns"></i>
                 <h3>Electronic Wallet : MOMO</h3>
-                <p><b>Account number : 0353999798</b></p>
+                <p><b>
+                    Account number : 0353999798
+                    <i title="Copy" class="btn-cpy ti-files" data-account="0353999798"></i>
+                </b></p>
                 <p><b>Account holder : NGUYEN VAN MINH</b></p>
-                <!-- <img src="./image/img-momo-qr.jpg" alt="Vietcombank QR Code" /> -->
             </div>
-
         </div>
-
     </section>
 
     <script src="js/script.js"></script>
     <script src="./js/scripsnow.js"></script>
 
-    <div class="footer">
+    <div id="footer">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Introduce</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <p>© 2023 Copyright by NVM - Paul Nguyen</p>
+        <p>© 2023 Built by NVM - Paul Nguyen</p>
     </div>
 
 
