@@ -1,4 +1,3 @@
-
 var snowmax=100
 
 var snowcolor=new Array("#00FF00","#0099CC","#FF66FF","#f3f3f3","#f0ffff")
@@ -85,4 +84,3 @@ for (i=0;i<=snowmax;i++) {
 if (browserok) {
         window.onload=initsnow
 }
-//]]>

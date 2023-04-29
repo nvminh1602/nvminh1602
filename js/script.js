@@ -27,34 +27,42 @@ themeToggler.onclick = () => {
 }
 
 // btn copy
-
-// Lấy tất cả các icon có class là "btn-cpy"
 const copyButtons = document.querySelectorAll('.btn-cpy');
-
-// Duyệt qua từng icon và thêm sự kiện "click"
 copyButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Lấy giá trị của thuộc tính "data-account"
         const accountNumber = button.getAttribute('data-account');
-
-        // Tạo một element input để sao chép giá trị vào clipboard
         const tempInput = document.createElement('input');
         tempInput.value = accountNumber;
         document.body.appendChild(tempInput);
-
-        // Sao chép giá trị vào clipboard
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(tempInput);
-
-        // Thêm dòng thông báo bên dưới số tài khoản
         alert("Copied");
     });
 });
 
+//zoom ảnh QR Code VCB
+const zoomQrVcb = document.querySelector('.js-qr-zoom-vcb');
+const modalVcb = document.querySelector('.js-modal-vcb');
+const modalCloseVcb = document.querySelector('.js-modal-close-vcb')
+function ShowQrVcb() {
+    modalVcb.classList.add('open')
+}
+function HideQrVcb() {
+    modalVcb.classList.remove('open')
+}
+zoomQrVcb.addEventListener('click', ShowQrVcb)
+modalCloseVcb.addEventListener('click', HideQrVcb)
 
-
-
-
-
-
+//zoom ảnh QR Code MOMO
+const zoomQrMomo = document.querySelector('.js-qr-zoom-momo');
+const modalMomo = document.querySelector('.js-modal-momo');
+const modalCloseMomo = document.querySelector('.js-modal-close-momo')
+function ShowQrMomo() {
+    modalMomo.classList.add('open')
+}
+function HideQrMomo() {
+    modalMomo.classList.remove('open')
+}
+zoomQrMomo.addEventListener('click', ShowQrMomo)
+modalCloseMomo.addEventListener('click', HideQrMomo)
