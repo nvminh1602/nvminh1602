@@ -346,11 +346,11 @@ section {
     cursor: pointer;
 }
 
-/* zoom QR */
+/* zoom */
 .modal.open{
     display: flex;
 }
-
+/* zoom tat ca anh font + size */
 .modal {
     position: fixed;
     top: 0;
@@ -362,12 +362,12 @@ section {
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
 }
-
 .modal img{
     width: 85vw;
     height: 85vh;
     object-fit: contain;
 }
+/* zoom tat ca anh font + size */
 /* zoom close */
 
 .portfolio .box-container {
@@ -448,7 +448,7 @@ section {
     transform: scale(1.1);
 }
 
-/*  */
+/* social-network */
 
 .contact form {
     margin: 1rem auto;

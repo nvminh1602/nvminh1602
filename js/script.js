@@ -44,7 +44,7 @@ copyButtons.forEach(button => {
 //zoom ảnh QR Code VCB
 const zoomQrVcb = document.querySelector('.js-qr-zoom-vcb');
 const modalVcb = document.querySelector('.js-modal-vcb');
-const modalCloseVcb = document.querySelector('.js-modal-close-vcb')
+const modalCloseVcb = document.querySelector('.js-modal-close-vcb');
 function ShowQrVcb() {
     modalVcb.classList.add('open')
 }
@@ -57,7 +57,7 @@ modalCloseVcb.addEventListener('click', HideQrVcb)
 //zoom ảnh QR Code MOMO
 const zoomQrMomo = document.querySelector('.js-qr-zoom-momo');
 const modalMomo = document.querySelector('.js-modal-momo');
-const modalCloseMomo = document.querySelector('.js-modal-close-momo')
+const modalCloseMomo = document.querySelector('.js-modal-close-momo');
 function ShowQrMomo() {
     modalMomo.classList.add('open')
 }
@@ -66,3 +66,21 @@ function HideQrMomo() {
 }
 zoomQrMomo.addEventListener('click', ShowQrMomo)
 modalCloseMomo.addEventListener('click', HideQrMomo)
+//zoom ảnh đại diện
+const zoomImgUser = document.querySelector('.user img');
+const modalOpenImgUser = document.querySelector('.js-modal-user');
+const modalCloseImgUser = document.querySelector('.js-modal-close-img-user');
+
+function ShowImgUser() {
+    modalOpenImgUser.classList.add('open')
+}
+
+function HideImgUser() {
+    modalOpenImgUser.classList.remove('open')
+}
+
+zoomImgUser.addEventListener('click', ShowImgUser)
+modalCloseImgUser.addEventListener('click', HideImgUser)
+
+
+
